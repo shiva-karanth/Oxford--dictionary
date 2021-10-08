@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxford Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section>
+        <form class="example" action="/action_page.php">
+            <h1>Oxford Dictionary</h1>
+            <input type="search" placeholder="Search.." name="search2" id="searchBox">
+            <button type="submit" onclick="wordSearch()" ><i class="fa fa-search"></i></button>
+            <button type="reset" onclick="reloadPage()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        </form>
+
+        <div class="searchResult" id="searchResult">
+            <div>
+                <h1>Word</h1>
+                <p id="word"></p>
+            </div>
+            <div>
+                <h1>Definition</h1>
+                <p id="definition"></p>
+            </div>
+            <div>
+                <h1>Example</h1>
+                <p id="example"></p>
+            </div>
+            
+            <div>
+                <h1>How To Spell?</h1>
+                <p id="spell"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="dic.js"></script>
+
+</body>
+
+</html>
