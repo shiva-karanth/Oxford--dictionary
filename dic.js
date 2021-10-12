@@ -19,13 +19,14 @@ play(dat)
     {
         sound="";
     var sound=new Audio('https:'+dat[0].phonetics[0].audio);
+    dat=""
    sound.play();
 
     }
 
     speaker.addEventListener('click',()=>
     {
-        
+       
 play(dat)
 
     })
