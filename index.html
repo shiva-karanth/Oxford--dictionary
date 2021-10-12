@@ -5,30 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oxford Dictionary</title>
-    <link rel="icon" href="R.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="R.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+
     <section>
-        <form class="example" action="/action_page.php">
+        
+        <div class="example">
             <h1>Oxford Dictionary</h1>
-            <input type="search" onchange="word()" placeholder="Search.." name="search2" id="searchBox">
-            <button type="submit" onclick="wordSearch()"><i class="fa fa-search"></i></button>
+            <input type="search" placeholder="Search.." name="search2" id="searchBox">
+            <button type="submit" onclick="word()"><i class="fa fa-search"></i></button>
             <button type="reset" onclick="reloadPage()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
-        </form>
+        </div>
+
         <div class="searchResult" id="searchResult">
             <div>
-                <h1>Word</h1>
+                   
+                <div id="g1">
+                        <button id="speaker" style="width:50px"><img id="sp" src="icon.png" alt=""></button>
                 <p id="word"></p>
+               </div>
+
             </div>
-            <div>
-                <h1>Definition</h1>
+            <div id="g2">
+               <div>
                 <p id="definition"></p>
             </div>
+            <div>
+              
+                <p id="example"></p>
+            </div>
+            <div>
+                <!-- <h1>How To Spell?</h1> -->
+               
+            </div>
+        </div>
         </div>
     </section>
+
     <script src="dic.js"></script>
+
 </body>
+
 </html>
