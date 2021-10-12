@@ -24,7 +24,7 @@ section .example h1 {
     font-weight: 500;
 }
   
-  form.example input[type=search] {
+  div.example input[type=search] {
     min-width: 400px;
     margin: 20px 10px;
     padding: 15px 20px;
@@ -38,7 +38,7 @@ section .example h1 {
     transition: box-shadow 0.5s;
   }
   
-  form.example button[type=submit] {
+  div.example button[type=submit] {
     margin: 0px 10px;
     padding: 15px 40px;
     background-color: #020202;
@@ -51,11 +51,11 @@ section .example h1 {
     outline: none;
   }
   
-  form.example button:hover {
+  div.example button[type=submit]:hover {
     background: #0b7dda;
   }
   
-  form.example::after {
+  div.example::after {
     content: "";
     clear: both;
     display: table;
@@ -80,11 +80,11 @@ section .example button[type=reset]:hover {
 }
 
 section .searchResult {
-    visibility: hidden;
-    display: flex;
+   
+    /* display: flex;
     justify-content: left;
     flex-direction: column;
-    margin: 10px 400px;
+    margin: 10px 400px; */
 } 
 
 section .searchResult div h1 {
@@ -93,4 +93,53 @@ section .searchResult div h1 {
 
 section .searchResult div p {
     font-size: 28px;
+}
+
+#sp
+{
+  width: 37px;
+  height: 33px;
+  border-radius: 50px;
+}
+
+#speaker
+{
+  border-radius: 28px;
+  width: 48px;
+  height: 48px;
+
+}
+
+#searchResult
+{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  text-align: center;
+}
+
+#g1
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+#definition
+{
+  padding: 3px;
+}
+
+#grey
+{
+  color: #9aa0a6;
+font-family: arial,sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px
+}
+
+#g2
+{
+  text-align: left;
 }
